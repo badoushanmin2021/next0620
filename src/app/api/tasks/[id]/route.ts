@@ -1,5 +1,6 @@
 import { TaskModel } from "@/models/task";
 import { connectDb } from "@/utils/database";
+import { log } from "console";
 import { NextRequest, NextResponse } from "next/server";
 
 export const GET = async (
@@ -12,11 +13,12 @@ export const GET = async (
 
     if (!task) {
       return NextResponse.json(
-        { message: "タスクが存在しません" },
+        {
+          message: "タスクが存在しません",
+        },
         { status: 404 }
       );
     }
-
     return NextResponse.json({ message: "タスク取得成功", task });
   } catch (error) {
     console.log(error);

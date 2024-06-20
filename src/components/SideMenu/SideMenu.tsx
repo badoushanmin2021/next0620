@@ -1,4 +1,5 @@
-import NavList from "./NavliST/NavList";
+import React from "react";
+import NavList from "./NavList/NavList";
 
 const SideMenu = () => {
   return (

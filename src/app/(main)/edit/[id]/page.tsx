@@ -19,7 +19,7 @@ const EditTaskPage = async ({ params }: Params) => {
   const task = await getTask(id);
 
   return (
-    <div className="flex flex-col justify-center py-20 ">
+    <div className="flex flex-col justify-center py-20">
       <h2 className="text-center text-2xl font-bold">Edit Task</h2>
       <EditTaskForm task={task} />
     </div>

@@ -12,5 +12,4 @@ const TaskEditButton: React.FC<TaskEditButtonProps> = ({ id }) => {
     </Link>
   );
 };
-
 export default TaskEditButton;

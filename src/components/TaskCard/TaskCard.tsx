@@ -23,7 +23,7 @@ const TaskCard: React.FC<TaskCardProps> = ({ task }) => {
           >
             {task.isCompleted ? "Completed" : "Incomplete"}
           </div>
-          <div className="flex gap-4 ">
+          <div className="flex gap-4">
             <TaskEditButton id={task._id} />
             <TaskDeleteButton id={task._id} />
           </div>
